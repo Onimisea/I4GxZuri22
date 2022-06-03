@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Register | Onimisea</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Onimisea's Simple Website" />
+		<meta name="keywords" content="Onimisea, Simple Website, HTML, CSS" />
+		<meta name="author" content="Ahned (Onimisea) Tijani" />
+		<link rel="stylesheet" href="register.css" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+		/>
+	</head>
+	<body>
+		<header>
+			<section class="wrapper">
+				<img class="logo" src="logo.png" alt="Onimisea Logo" />
+				<nav>
+					<ul>
+						<li><a class="" href="index.html">About</a></li>
+						<li><a class="" href="contact.html">Contact</a></li>
+						<li><a class="active" href="register.html">Register</a></li>
+						<li><a class="" href="login.html">Login</a></li>
+					</ul>
+				</nav>
+			</section>
+		</header>
+
+		<main>
+			<section class="hero">
+				<section class="top-blend"></section>
+        
+				<section class="formCard">
+					<h1 class="">Register</h1>
+					<hr />
+
+					<form class="form" action="contact.html" method="post">
+						<section class="formItem">
+							<label for="firstname">First Name</label>
+							<input
+								type="text"
+								name="firstname"
+								id="firstname"
+								value=""
+								required="required"
+								placeholder="first name"
+							/>
+						</section>
+
+            <section class="formItem">
+							<label for="lastname">Last Name</label>
+							<input
+								type="text"
+								name="lastname"
+								id="lastname"
+								value=""
+								required="required"
+								placeholder="last name"
+							/>
+						</section>
+
+						<section class="formItem">
+							<label for="email">Email</label>
+							<input
+								type="email"
+								name="email"
+								id="email"
+								value=""
+								required
+								placeholder="email address"
+							/>
+						</section>
+
+            <section class="formItem">
+							<label for="phone">Phone</label>
+							<input
+								type="tel"
+								name="phone"
+								id="phone"
+								value=""
+								required="required"
+								placeholder="phone"
+							/>
+						</section>
+
+            <section class="formItem">
+							<label for="gender">Gender</label>
+              <select name="gender" id="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+						</section>
+
+						<section class="formItem">
+							<label for="country">Country</label>
+							<input
+								type="text"
+								name="country"
+								id="country"
+								value=""
+								required="required"
+								placeholder="country"
+							/>
+						</section>
+
+            <section class="formItem">
+							<label for="state">State</label>
+							<input
+								type="text"
+								name="state"
+								id="state"
+								value=""
+								required="required"
+								placeholder="state"
+							/>
+						</section>
+
+            <section class="formItem">
+							<label for="password">Password</label>
+							<input
+								type="password"
+								name="password"
+								id="password"
+								value=""
+								required="required"
+								placeholder="password"
+							/>
+						</section>
+
+            <section class="formItem">
+							<label for="confirm-password">Confirm Password</label>
+							<input
+								type="password"
+								name="confirm-password"
+								id="confirm-password"
+								value=""
+								required="required"
+								placeholder="confirm password"
+							/>
+						</section>
+
+						<section class="formItem">
+							<button type="submit" class="">Register</button>
+						</section>
+					</form>
+				</section>
+			</section>
+		</main>
+
+		<footer>
+			<p>Onimisea | 2022</p>
+		</footer>
+	</body>
+</html>

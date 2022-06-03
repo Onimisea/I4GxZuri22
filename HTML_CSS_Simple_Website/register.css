@@ -1,0 +1,296 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	letter-spacing: 1.3px;
+	font-family: "Nunito", sans-serif;
+}
+
+html,
+body {
+	width: 100%;
+	min-width: 320px;
+	min-height: 100%;
+	position: relative;
+	/*background: #f5f5f5;*/
+}
+
+.wrapper {
+	width: 90%;
+	display: block;
+	margin: 0 auto;
+}
+
+header {
+	width: 100%;
+	height: 90px;
+	background: #fff;
+	margin: 0;
+	padding: 0;
+}
+
+header .wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	overflow: hidden;
+}
+
+header .wrapper .logo {
+	width: 120px;
+	padding: 15px 0;
+	height: auto;
+}
+
+header nav {
+	width: fit-content;
+	margin-left: 30px;
+	overflow: auto;
+}
+
+header nav ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	height: 90px;
+}
+
+nav ul li {
+	width: fit-content;
+	height: fit-content;
+	padding: 0;
+	margin: 0;
+	height: 90px;
+}
+
+nav ul li a {
+	padding: 15px 20px;
+	text-decoration: none;
+	color: #007fff;
+	font-size: 18px;
+	display: flex;
+	height: 90px;
+	justify-content: center;
+	align-items: center;
+}
+
+nav ul li a:hover,
+nav ul li a.active:hover {
+	background: linear-gradient(45deg, #051550, #ff00df);
+	color: #fff;
+	border: none;
+	border-radius: 0;
+}
+
+nav ul li a.active {
+	border-top: 4px solid #ff00df;
+	border-bottom: 4px solid #ff00df;
+	color: #ff00df;
+	height: 90px;
+}
+
+main {
+	width: 100%;
+	display: block;
+	position: relative;
+	padding: 0;
+	margin: 0;
+}
+
+.hero {
+	width: 100%;
+	height: auto;
+	background-image: url("hero.jpg");
+	background-position: center center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: 0;
+}
+
+.top-blend {
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to bottom, #051550, rgba(0, 0, 0, 0.3));
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -5;
+}
+
+.formCard {
+	width: 40%;
+	height: fit-content;
+	display: block;
+	background: #fff;
+  margin: 50px auto;
+	padding: 40px 30px;
+	border-radius: 10px;
+	border-bottom: 2px solid #ff00df;
+	z-index: 100 !important;
+}
+
+.formCard h1 {
+	color: #007fff;
+	font-weight: bold;
+	text-align: center;
+	font-size: 32px;
+	margin-top: 20px;
+}
+
+.formCard hr {
+	width: 100px;
+	margin: 10px auto;
+	height: 4px;
+	border: none;
+	outline: none;
+	background: linear-gradient(45deg, #3219c8, #ff00df);
+}
+
+form {
+	display: block;
+	margin-top: 30px;
+	width: 100%;
+}
+
+form .formItem {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+form .formItem:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+form .formItem label,
+form .formItem input,
+form .formItem textarea,
+form .formItem button {
+	display: block;
+	width: 100%;
+}
+
+form .formItem label {
+	font-size: 18px;
+	color: #051550;
+}
+
+form .formItem input {
+	font-size: 17px;
+	color: #3219c8;
+	padding: 10px;
+	margin-top: 8px;
+	outline: none;
+	border: 1px solid #007fff;
+	border-radius: 5px;
+}
+
+form .formItem input:hover {
+	border: 2px solid #ff00df;
+}
+
+form .formItem select {
+	font-size: 17px;
+	color: #3219c8;
+	padding: 10px;
+	margin-top: 8px;
+	outline: none;
+	border: 1px solid #007fff;
+	border-radius: 5px;
+}
+
+form .formItem select:hover {
+	border: 2px solid #ff00df;
+}
+
+form .formItem button {
+	border-radius: 5px;
+	background: linear-gradient(45deg, #3219c8, #ff00df);
+	color: #fff;
+	outline: none;
+	border: none;
+	font-weight: bolder;
+	font-size: 18.5px;
+	padding: 16px 20px;
+}
+
+form .formItem button:hover {
+	background: linear-gradient(45deg, #ff00df, #3219c8);
+	cursor: pointer;
+}
+
+footer {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	background: #051550;
+	text-align: center;
+	width: 100%;
+	height: fit-content;
+	display: block;
+}
+
+footer hr {
+	width: 250px;
+	margin: 0 auto;
+	height: 4px;
+	border: none;
+	outline: none;
+	background: #007fff;
+}
+
+footer p {
+	background: #051550;
+	padding: 40px 0;
+	font-size: 18px;
+}
+
+@media screen and (max-width: 1080px) {
+	.formCard {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 960px) {
+	.formCard {
+		width: 60%;
+	}
+}
+
+@media screen and (max-width: 870px) {
+	.formCard {
+		width: 70%;
+	}
+}
+
+@media screen and (max-width: 760px) {
+	.formCard {
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 580px) {
+	header nav {
+		margin-left: 60px;
+	}
+
+	.formCard {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 420px) {
+}
+

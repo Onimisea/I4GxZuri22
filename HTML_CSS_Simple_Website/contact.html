@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Contact | Onimisea</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Onimisea's Simple Website" />
+		<meta name="keywords" content="Onimisea, Simple Website, HTML, CSS" />
+		<meta name="author" content="Ahned (Onimisea) Tijani" />
+		<link rel="stylesheet" href="contact.css" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+		/>
+	</head>
+	<body>
+		<header>
+			<section class="wrapper">
+				<img class="logo" src="logo.png" alt="Onimisea Logo" />
+				<nav>
+					<ul>
+						<li><a class="" href="index.html">About</a></li>
+						<li><a class="active" href="contact.html">Contact</a></li>
+						<li><a class="" href="register.html">Register</a></li>
+						<li><a class="" href="login.html">Login</a></li>
+					</ul>
+				</nav>
+			</section>
+		</header>
+
+		<main>
+			<section class="hero">
+				<section class="top-blend"></section>
+        
+				<section class="formCard">
+					<h1 class="">Contact Me</h1>
+					<hr />
+
+					<form class="form" action="contact.html" method="post">
+						<section class="formItem">
+							<label for="name">Name</label>
+							<input
+								type="text"
+								name="name"
+								id="name"
+								value=""
+								required="required"
+								placeholder="full name"
+							/>
+						</section>
+
+						<section class="formItem">
+							<label for="email">Email</label>
+							<input
+								type="email"
+								name="email"
+								id="email"
+								value=""
+								required
+								placeholder="email address"
+							/>
+						</section>
+
+						<section class="formItem">
+							<label for="message">Message</label>
+							<textarea
+								type="text"
+								name="message"
+								id="message"
+								value=""
+								placeholder="type your message here..."
+								required
+							></textarea>
+						</section>
+
+						<section class="formItem">
+							<button type="submit" class="">Send Message</button>
+						</section>
+					</form>
+				</section>
+			</section>
+		</main>
+
+		<footer>
+			<p>Onimisea | 2022</p>
+		</footer>
+	</body>
+</html>
