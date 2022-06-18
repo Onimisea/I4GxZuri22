@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Responsive Registration Form | Onimisea</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta
+			name="description"
+			content="A responsive registration page to demonstrate my frontend skills"
+		/>
+		<meta name="author" content="Onimisea" />
+		<link rel="icon" type="image/x-icon" href="./images/favicon-32x32.png" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="index.css" />
+	</head>
+
+	<body>
+		<main>
+			<section class="main-cols heroCopy">
+				<h1>
+					Learn to code by <br />
+					watching others
+				</h1>
+				<p>
+					See how experienced developers solve problems in real-time. Watching
+					scripted tutorials is great, but understanding how developers think is
+					invaluable.
+				</p>
+			</section>
+
+			<section class="main-cols formWrapper">
+				<button class="cta">
+					<strong>Try it free 7 days</strong> then $20/mo. thereafter
+				</button>
+
+				<form action="/" method="post" id="regForm">
+					<label for="firstname">
+						<section>
+							<input
+								class="inp"
+								type="text"
+								name="firstname"
+								id="firstname"
+								placeholder="Firstname"
+								required
+							/>
+							<img
+								id="fnImg"
+								class="hide"
+								src="./images/icon-error.svg"
+								alt="Error"
+							/>
+						</section>
+						<p id="fnErr" class="hide">Firstname cannot be empty</p>
+					</label>
+
+					<label for="lastname">
+						<section>
+							<input
+								class="inp"
+								type="text"
+								name="lastname"
+								id="lastname"
+								placeholder="Lastname"
+								required
+							/>
+							<img
+								id="lnImg"
+								class="hide"
+								src="./images/icon-error.svg"
+								alt="Error"
+							/>
+						</section>
+						<p id="lnErr" class="hide">Lastname cannot be empty</p>
+					</label>
+
+					<label for="email">
+						<section>
+							<input
+								class="inp"
+								type="email"
+								name="email"
+								id="email"
+								placeholder="email"
+								required
+							/>
+							<img
+								id="emImg"
+								class="hide"
+								src="./images/icon-error.svg"
+								alt="Error"
+							/>
+						</section>
+						<p id="emErr" class="hide">Email cannot be empty</p>
+					</label>
+
+					<label for="password">
+						<section>
+							<input
+								class="inp"
+								type="password"
+								name="password"
+								id="password"
+								placeholder="Password"
+								required
+							/>
+							<img
+								id="pwImg"
+								class="hide"
+								src="./images/icon-error.svg"
+								alt="Error"
+							/>
+						</section>
+						<p id="pwErr" class="hide">Password cannot be empty</p>
+					</label>
+
+					<button type="submit" id="submit">claim your free trial</button>
+
+					<small
+						>By clicking the button, you are agreeing to our<br />
+						<span>Terms and Services</span></small
+					>
+				</form>
+			</section>
+		</main>
+
+		<footer>
+			<p>Onimisea | 2022</p>
+		</footer>
+
+		<script src="index.js"></script>
+	</body>
+</html>
+
