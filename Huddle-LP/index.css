@@ -1,0 +1,421 @@
+* {
+	box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-size: 42px;
+}
+h2 {
+	font-size: 38px;
+}
+h3 {
+	font-size: 32px;
+}
+h4 {
+	font-size: 27px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+	color: hsl(192, 100%, 9%);
+}
+
+body {
+	min-height: 100vh;
+	line-height: 1.5;
+	background: #fafafa;
+	font-size: 18px;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	object-fit: cover;
+	display: block;
+}
+
+button {
+	font: inherit;
+	outline: none;
+	border: none;
+	font-family: "Open Sans", sans-serif;
+}
+
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+	padding: 0;
+}
+
+header {
+	width: 100%;
+	display: block;
+	background-image: url(./images/bg-hero-desktop.svg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: hsl(193, 100%, 96%);
+}
+
+header .topbar {
+	width: 90%;
+	margin: 0 auto;
+	padding: 40px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .topbar button {
+	padding: 12px 50px;
+	border-radius: 50px;
+	background: #fff;
+	color: hsl(192, 100%, 9%);
+	font-family: "Open Sans", Sans-Serif;
+	font-weight: 700;
+	font-size: 14px;
+	box-shadow: 0 0 10px 0 hsla(208, 11%, 55%, 50%);
+	cursor: pointer;
+}
+
+header .topbar button:focus,
+header .topbar button:hover {
+	background: hsl(192, 100%, 9%);
+	color: #fff;
+}
+
+header .hero {
+	padding: 20px 0 60px 0;
+}
+
+header .hero .wrapper {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: auto auto;
+	place-items: center;
+}
+
+header .hero article {
+	margin-right: 70px;
+	color: hsl(192, 100%, 9%);
+}
+
+header .hero article p {
+	font-size: 18px;
+	line-height: 37px;
+	margin: 20px 0 30px 0;
+}
+
+main {
+	width: 95%;
+	display: block;
+	margin: 0 auto;
+	padding: 50px 0 140px 0;
+	background: #fff;
+}
+
+main .mainFeatures {
+	background: #fff;
+	margin: 0 auto;
+	padding: 60px 0 100px 0;
+}
+
+main .mainFeatures .card {
+	background: #fff;
+	margin: 0 auto;
+	padding: 30px;
+	text-align: left;
+	border-radius: 10px;
+	box-shadow: 0 0 10px 0 hsla(208, 11%, 55%, 20%);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.card article {
+	margin: 0 50px;
+	width: 51%;
+}
+
+.card figure {
+	width: 35%;
+}
+
+.card article p {
+	color: hsl(208, 11%, 55%);
+	font-size: 18px;
+	line-height: 36px;
+	margin: 10px 0;
+}
+
+main .mainFeatures .card:nth-child(2) {
+	margin: 30px 0;
+	flex-direction: row-reverse;
+}
+
+footer .ctaWrapper {
+	background: #fff;
+	width: 60%;
+	margin: -160px auto 0 auto;
+	padding: 40px;
+	text-align: center;
+	border-radius: 10px;
+	box-shadow: 0 0 10px 0 hsla(208, 11%, 55%, 20%);
+	z-index: 10000;
+}
+
+footer .ctaWrapper h4 {
+	margin-bottom: 20px;
+}
+
+.cta {
+	padding: 12px 50px;
+	border-radius: 50px;
+	background: hsl(322, 100%, 66%);
+	color: #fff;
+	font-family: "Open Sans", Sans-Serif;
+	font-weight: 700;
+	font-size: 18px;
+	box-shadow: 0 0 10px 0 hsla(208, 11%, 55%, 50%);
+  cursor: pointer;
+}
+
+.cta:focus,
+.cta:hover {
+	background: #fff;
+	color: hsl(322, 100%, 66%);
+	border: 1.5px solid hsl(322, 100%, 66%);
+}
+
+footer {
+	background: hsl(192, 100%, 9%);
+	color: hsl(208, 11%, 85%);
+	padding: 70px 0;
+}
+
+footer .f1 {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+	margin-top: 50px;
+}
+
+footer .f1 .company {
+	width: 30%;
+}
+
+footer .f1 .company h2 {
+	color: #fff;
+	margin-bottom: 15px;
+}
+
+footer .f1 .company p {
+	font-size: 18px;
+	line-height: 36px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+footer .f1 .company p:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+footer .f1 .company p i {
+	display: block;
+	margin-top: 3.5px;
+}
+
+footer .f1 .company p span {
+	margin: 0 0 0 20px;
+	display: block;
+	padding: 0;
+}
+
+footer .f1 a {
+	display: block;
+	text-decoration: none;
+	color: inherit;
+}
+
+footer .f1 a:focus,
+footer .f1 a:hover {
+	color: hsl(322, 100%, 66%);
+	text-decoration-color: hsl(322, 100%, 66%);
+}
+
+footer .f1 .links {
+	width: 25%;
+	font-size: 18px;
+	margin-top: 36px;
+	text-align: left;
+	padding-left: 100px;
+}
+
+footer .f1 .social-icons {
+	width: 20%;
+	margin-top: 40px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+footer .f1 .social-icons a {
+	border: 1.5px solid hsl(208, 11%, 85%);
+	border-radius: 50%;
+	display: block;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer .f1 .social-icons a:focus,
+footer .f1 .social-icons a:hover {
+	border: 1.5px solid hsl(322, 100%, 66%);
+}
+
+footer .f1 .social-icons a:nth-child(2) {
+	margin: 0 15px;
+}
+
+footer .f2 {
+	margin-top: 50px;
+	text-align: right;
+	font-size: 16px;
+}
+
+@media only screen and (max-width: 1090px) {
+  footer .f1 .links {
+		width: 25%;
+		margin: 25px auto 0 auto;
+		padding: 0 50px;
+	}
+}
+
+@media only screen and (max-width: 960px) {
+  footer .f1 .links {
+		width: 25%;
+		margin: 25px auto 0 auto;
+		padding: 0 10px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	header .topbar,
+	.wrapper {
+		width: 85%;
+	}
+
+	header .hero article {
+		text-align: center;
+		margin: 0 0 70px 0;
+	}
+
+	header .hero article p {
+		font-size: 15px;
+		margin: 30px 0;
+	}
+
+	header .hero .wrapper {
+		grid-template-columns: 1fr;
+		grid-template-rows: auto auto;
+	}
+
+	main .mainFeatures .card {
+		flex-direction: column-reverse;
+		font-size: 18px;
+	}
+
+	.card article {
+		margin: 0;
+		width: 90%;
+	}
+
+	.card figure {
+		width: 100%;
+	}
+
+	.card article h2 {
+		margin-top: 50px;
+	}
+
+	.card article p {
+		margin: 30px 0;
+	}
+
+	main .mainFeatures .card:nth-child(2) {
+		margin: 30px 0;
+		flex-direction: column-reverse;
+	}
+
+	footer .ctaWrapper {
+		width: 80%;
+		padding: 50px 0;
+	}
+
+	footer .ctaWrapper h4 {
+		margin-bottom: 30px;
+	}
+
+	footer .f1 {
+		flex-direction: column;
+	}
+
+	footer .f1 .company {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	footer .f1 .links {
+		width: 80%;
+		margin: 25px auto 0 auto;
+		padding: 0;
+	}
+
+	footer .f1 .social-icons {
+		width: 80%;
+		padding-left: 40px;
+		margin: 40px auto 0 auto;
+	}
+
+	footer .f2 {
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 580px) {
+}
+
+@media only screen and (max-width: 375px) {
+}
+
