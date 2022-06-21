@@ -1,0 +1,1 @@
+alert("Welcome. \n\n My name is Ahmed Tijani. \n\n I am 1.68 meters tall. \n\n And I am from Nigeria");
